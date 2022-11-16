@@ -1,136 +1,396 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css">
-<!-- START NAV -->
+<!DOCTYPE html>
+<html lang="en">
 
-<nav id="navbar" class="nav">
-    <ul class="nav-list">
-        <li>
-            <a href="#welcome-section">About</a>
-        </li>
-        <li>
-            <a href="#projects">Work</a>
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-    </ul>
-</nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleson Galvez" />
+    <meta name="description" content="freeCodeCamp project page for personal portfolio project" />
+    <meta name="keywords" content="fcc project freecodecamp" />
+    <title>freeCodeCamp Personal Portfolio Project</title>
+    <!--local style sheet-->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <!-- google Source Sans Pro & Montserrat fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap" />   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <ul class="navs">
+            <li><a class="nav-link" href="#welcome-section">About</a></li>
+            <li><a class="nav-link" href="#projects">Work</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- END NAV -->
+    <main>
 
-<!-- START WELCOME SECTION -->
+        <div id="welcome-section">
+            <div class="welcome-wrapper">
 
-<section id="welcome-section" class="welcome-section">
-    <h1>Hey I am Aleson</h1>
-    <p>a web developer</p>
-</section>
+                <div class="blurb-section">
 
-<!-- END WELCOME SECTION -->
+                    <section class="me-copy">
+                        <p>I am a student and aspiring web developer using
+                            <a href="https://freecodecamp.org/bradleyhop" target="_blank" rel="noopener noreferrer"
+                                style="color: #FF63C3">
+                                freeCodeCamp
+                            </a>
+                            as my main source and school requirement. I am proficient in html, css, and javascript
+                            while also utilizing tools like: flexbox in css,
+                            I upload my work to my
+                            <a href="https://github.com/alesonpro" target="_blank" rel="noopener noreferrer"
+                                style="color: #FF63C3">
+                                github
+                            </a>
+                            which also serves the webpages live.
+                        </p>
+                    </section>
+                </div>
+                <div class="banner">
+                    <h1 class="my-name">Aleson Galvez</h1>
+                    <div class="tagline">
+                        web developer
+                        <a href="https://github.com/alesonpro" id="profile-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="Aleson's github profile" class="profile-link">
+                            <i class="fab fa-github profile-fa-github" aria-hidden="true"
+                                title="Aleson's github profile">
+                                <span class="sr-only">Link to github profile</span>
+                            </i>
+                        </a>
+                    </div>
+                    <img src="img/me.png" alt="picture of bradley looking forward to the future"
+                        class="profile-pic" />
+                </div>
+            </div><!-- welcome-wrapper -->
+        </div><!-- welcome-section -->
 
-<!-- START PROJECTS SECTION -->
+        <div data-aos="fade-up"  id="projects" class="projects">
+            <p class="work-heading">My Coding Projects on Freecodecamp</p>
+            <!--Responsive web fCC tab-->
+            <div  id="responsive" class="project-branch">
 
-<section id="projects" class="projects-section">
-    <h2 class="projects-section-header">These are some of my projects</h2>
+                <p class="responsive-copy">
+                    The first certification of the freeCodeCamp curriculum. This section teaches html and
+                    css to complete five projects each with their own use story requirements. On each
+                    project, there is a green hamburger icon in the top left corner that opens the testing
+                    suite for that particular project. The user stories are listed therein (be sure that the
+                    correct project is selected in the drop-down menu).
+                </p>
 
-    <div class="projects-grid">
-        <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
-            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-                alt="project" />
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Tribute Page
-                <span class="code">&#47;&gt;</span>
-            </p>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
-            <img class="project-image"
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-                alt="project" />
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Random Quote Machine
-                <span class="code">&#47;&gt;</span>
-            </p>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
-            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-                alt="project" />
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                JavaScript Calculator
-                <span class="code">&#47;&gt;</span>
-            </p>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
-            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-                alt="project" />
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Map Data Across the Globe
-                <span class="code">&#47;&gt;</span>
-            </p>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
-            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-                alt="project" />
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Wikipedia Viewer
-                <span class="code">&#47;&gt;</span>
-            </p>
-        </a>
-        <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-                alt="project" />
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Tic Tac Toe Game
-                <span class="code">&#47;&gt;</span>
-            </p>
-        </a>
-    </div>
+                <div class="project-flex">
 
-    <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i
-            class="fas fa-chevron-right"></i></a>
-</section>
+                    <div class="project-tile">
+                        <a href="https://www.freecodecamp.org/certification/bradleyhop/responsive-web-design"
+                            target="_blank" rel="noopener noreferrer" class="project-link">
+                            <img src="assets/responsiveCert.png" alt="certificate for responsive web design"
+                                class="project-img">
+                            <p class="tile-heading">Responsive Web Design Certification</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io" target="_blank"
+                            rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
 
-<!-- END PROJECTS SECTION -->
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <img src="assets/portfolio.png" alt="screenshot of portfolio webpage" class="project-img">
+                            <p class="tile-heading">Personal Profile</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io" target="_blank"
+                            rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
 
-<!-- START CONTACT SECTION -->
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/techDoc/techDoc.html" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <img src="assets/fccTechDoc.png" alt="screenshot of technical documentation project"
+                                class="project-img">
+                            <p class="tile-heading">Technical Documentation</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io/tree/master/techDoc" target="_blank"
+                            rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
 
-<section id="contact" class="contact-section">
-    <div class="contact-section-header">
-        <h2>Let's work together...</h2>
-        <p>How do you take your coffee?</p>
-    </div>
-    <div class="contact-links">
-        <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                class="fab fa-facebook-square"></i> Facebook</a>
-        <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                class="fab fa-github"></i> GitHub</a>
-        <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                class="fab fa-twitter"></i> Twitter</a>
-        <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-        <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-    </div>
-</section>
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/productLandingPage/productLandingPage.html"
+                            target="_blank" rel="noopener noreferrer" class="project-link">
+                            <img src="assets/fccProductLanding.png" alt="screenshot of product landing page"
+                                class="project-img">
+                            <p class="tile-heading">Product Landing Page</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io/tree/master/productLandingPage"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
 
-<!-- END CONTACT SECTION -->
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/surveyForm/surveyForm.html" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <img src="assets/survey.png" alt="screenshot of survey form" class="project-img">
+                            <p class="tile-heading">Survey Form</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io/tree/master/surveyForm"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
 
-<!-- START FOOTER SECTION -->
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/tribute/tribute.html" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <img src="assets/tribute.png" alt="screenshot of tribute webpage to Frankie Manning"
+                                class="project-img">
+                            <p class="tile-heading">Tribute</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io/tree/master/tribute" target="_blank"
+                            rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
 
-<footer>
-    <p>
-        **This is just a fake portfolio. All the projects and contact details given
-        are not real.
-    </p>
-    <p>
-        &copy; Created for
-        <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
-    </p>
-</footer>
+                </div><!-- project-flex -->
+            </div>
+            <!--#responsive -->
+                <div class="project-flex">
 
-<!-- END FOOTER SECTION -->
+                    <div class="project-tile">
+                        <a href="https://pasuwadogenerator.netlify.app/"
+                            target="_blank" rel="noopener noreferrer" class="project-link">
+                            <p class="tile-heading">Javascript Random Password Generator</p>
+                        </a>
+                        <a href="https://github.com/alesonpro/Password-Generator" target="_blank" rel="noopener noreferrer"
+                            class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="https://alesonpro.github.io/Survey-Form/" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <p class="tile-heading">Survey Form</p>
+                        </a>
+                        <a href="https://github.com/alesonpro/Survey-Form"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="https://alesonpro.github.io/Tribute-Page/" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <p class="tile-heading">Tribute Page</p>
+                        </a>
+                        <a href="https://github.com/alesonpro/Tribute-Page"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="https://alesonpro.github.io/Technical-Documentation/" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <p class="tile-heading">Technical Documentation</p>
+                        </a>
+                        <a href="https://github.com/alesonpro/Technical-Documentation"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="https://alesonpro.github.io/Product-Landing-Page/" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <p class="tile-heading">Product Landing Page</p>
+                        </a>
+                        <a href="https://github.com/alesonpro/Product-Landing-Page"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="https://alesonpro.github.io/Personal-Portfolio/" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <p class="tile-heading">Portfolio</p>
+                        </a>
+                        <a href="https://github.com/alesonpro/Personal-Portfolio"
+                            target="_blank" rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="extracirricular" class="project-branch">
+
+                <p class="responsive-copy">
+                    In addition to freeCodeCamp, I use other resources to increase my knowledge and practice
+                    my skills. Here are various algorithm exercises, classes, and projects not part of the
+                    freeCodeCamp curriculum.
+                </p>
+                <div class="project-flex">
+
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/postRockBandName/" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <img src="assets/postrock-bandname.jpg" alt="screenshot of post rock band name quiz"
+                                class="project-img">
+                            <p class="tile-heading">Post-Rock Band Name Generator</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/postrock-bandname/" target="_blank"
+                            rel="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="https://bradleyhop.github.io/randomQuotes/extraCreditRQ/random.html" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <img src="assets/terminalQuote.png"
+                                alt="screenshot of terminal style random quote generator" class="project-img">
+                            <p class="tile-heading">Terminal Quote Generator</p>
+                        </a>
+                        <a href="https://github.com/bradleyhop/bradleyhop.github.io/tree/master/randomQuotes/extraCreditRQ/"
+                            target="noopener noreferrer" class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <img src="assets/wikiSearchApp.png"
+                                alt="screenshot of wikipedia search and preview article application"
+                                class="project-img">
+                            <p class="tile-heading">Wikipedia Article Search and Preview</p>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer"
+                            class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href="" target="_blank"
+                            rel="noopener noreferrer" class="codewars-link">
+                            <img src=""
+                                alt="bradley's current codewars standing" class="project-img">
+                        </a>
+                        <a href="https://github.com/alesonpro" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <p class="tile-heading">Codewars</p>
+                        </a>
+                        <a href="https://github.com/alesonpro" target="_blank" rel="noopener noreferrer"
+                            class="projects-github">
+                            <p class="github-link">github repo
+                                <i class="fas fa-external-link-alt"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-aos="fade-right" id="contact">
+            <div class="contact-wrapper">
+
+                <div class="profile-header">
+                    Let's talk about my projects
+                </div>
+                <div class="profile-sub">
+                    <em>Could I be the team member you're looking for?</em>
+                </div>
+
+                <div class="contact-link-flex">
+
+                    <a href="https://github.com/alesonpro" target="_blank" rel="noopener noreferrer"
+                        aria-label="Aleson's github profile" class="contact-link">
+                        <i class="fab fa-github contact-fa-github fa-highlight" aria-hidden="true"
+                            title="github profile">
+                            <span class="sr-only">Link to github profile</span>
+                        </i>
+                    </a>
+
+                    <a href="" class="contact-link" target="_blank"
+                        rel="noopener noreferrer" title="linkedin" aria-label="Aleson's linked in profile">
+                        <i class="fab fa-linkedin-in fa-highlight" aria-hidden="true" title="linkedin">
+                            <span class="sr-only">link to linkedin profile</span>
+                        </i>
+                    </a>
+
+                    <a href="" class="contact-link" target="_blank"
+                        rel="noopener noreferrer" aria-label="Aleson's free code camp profile">
+                        <i class="fab fa-free-code-camp fa-highlight" aria-hidden="true" title="freeCodeCamp profile">
+                            <span class="sr-only">Link to free code camp profile</span>
+                        </i>
+                    </a>
+
+                    <a href="mailto:rolfaleson.pro@gmail.com" class="contact-link" title="email me"
+                        aria-label="Aleson's email address">
+                        <i class="fas fa-at fa-highlight" aria-hidden="true" title="email me">
+                            <span class="sr-only">link to email address</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="to-top">
+            <a href="#" aria-label="jump to top of page">
+                <i class="fas fa-chevron-up" aria-hidden="true" title="back to top">
+                    <span class="sr-only">to top of page</span>
+                </i>
+            </a>
+            <div>&copy; 2022 Rolf Aleson Galvez. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
